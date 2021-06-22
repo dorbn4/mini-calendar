@@ -1,0 +1,58 @@
+#calHeatMapDiv {
+  width: 80%;
+  margin-left: 10%;
+}
+#calHeatMapDiv .heatMapDiv table {
+  width: 100%;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv div:not(.legend), 
+#calHeatMapDiv .heatMapDiv table tbody tr td div:not(.axis) {
+  font-size: 11px;
+  min-width: 10px;
+  aspect-ratio: 1 / 1;
+  background:  rgba(246, 248, 250);
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+#calHeatMapDiv .heatMapDiv table tbody tr td div.empty {
+  opacity: 0;
+}
+#calHeatMapDiv .heatMapDiv table tbody tr.header {
+  height: 20px;
+}
+#calHeatMapDiv .heatMapDiv table tbody tr.header td {
+  padding-bottom: 12px;
+}
+#calHeatMapDiv .heatMapDiv table tbody tr.header td span {
+  position: absolute;
+}
+#calHeatMapDiv .heatMapDiv table span {
+  text-transform: capitalize; 
+  cursor: default;
+}
+#calHeatMapDiv .heatMapDiv table tbody tr td div.highlight {
+  border-color: #ababab;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 7px;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv div.legend {
+  display: flex;
+  height: 15px;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv div.legend span {
+  font-size: 11px;
+  align-self: center;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv div.legend span:first-child {
+  padding-right: 6px;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv div.legend span:last-child {
+  padding-left: 6px;
+}
+#calHeatMapDiv .heatMapDiv .legendDiv div.legend div {
+  margin: 0 2px;
+}
